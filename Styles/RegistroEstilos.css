@@ -1,0 +1,194 @@
+/* registroEstilos.css */
+body {
+    display: flex;
+    font-family: sans-serif;
+    background: url(Fondo\ Registro-InicioSesion.jpg) no-repeat center;
+    background-size: cover ; /* Ajusta el tamaño del ancho de la imagen según el ancho de la página */
+    height: 100vh;
+  }
+  .contenedorPrincipal{
+    width: 100%;
+  }
+/* Estilos para el formulario de registro */
+#registro-box {
+    /* Estilos de contenedor principal */
+    position: relative;
+    margin-left: 65%;
+    margin-top: 4%;
+    max-width: 400px;
+    width: 90%;
+    padding: 40px;
+    background: rgb(242, 107, 118, 0.719);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgb(242, 107, 118, .4);
+    border-radius: 10px;
+    position: absolute;
+}
+#registro-box > *{
+    margin-bottom: 2px;
+}
+#registro-box h2 {
+    /* Estilos para el título del formulario */
+    margin: 0 0 30px;
+    padding: 0;
+    color:  rgb(242, 179, 61);
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold; 
+    font-family: "kanit", sans-serif;
+}
+
+#registro-box .user-box{
+    position: relative;
+}
+#registro-box .user-box input {
+    /* Estilos para los campos de entrada */
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #F2B33D;
+    outline: none;
+    background: transparent;
+}
+
+#registro-box .user-box label{
+    /* Estilos para las etiquetas de los campos */
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #1D2F40;
+    pointer-events: none;
+    transition: .5s;
+}
+
+#registro-box .user-box input:focus ~ label,
+#registro-box .user-box input:valid ~ label,
+#registro-box .user-box input.filled ~ label{
+    /* Estilos para las etiquetas de los campos cuando están enfocados o contienen datos */
+    top: -20px;
+    left: 0;
+    color: #ff5866;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+#registro-box form a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #F2B33D;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+#registro-box .contenedorBotones {
+    /* Estilos para el contenedor de botones */
+    display: flex;
+    justify-content: space-around;
+}
+.claveMensaje{
+    font-size: 12px;
+}
+#registro-box a:hover {
+    /* Estilos para los enlaces cuando se les pasa el mouse por encima */
+    background: rgb(242, 179, 61);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(242, 179, 61), 
+                0 0 25px rgb(242, 179, 61),
+                0 0 50px rgb(242, 179, 61),
+                0 0 100px rgb(242, 179, 61);
+}
+
+#registro-box a span {
+    /* Estilos para los efectos de animación en los enlaces */
+    position: absolute;
+    display: block;
+}
+
+.registro-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #F2E6D0);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .registro-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #F2E6D0);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .registro-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(270deg, transparent, #F2E6D0);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .registro-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #F2E6D0);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+
+
+/* Otros estilos necesarios */
