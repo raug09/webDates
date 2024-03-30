@@ -163,7 +163,7 @@ function validarClave(claveMensaje) {
         }else if(password.length<=6){
             message += 'Debe tener al menos 7 digitos';
         }
-    };      
+    }      
     const passwordMessage = document.getElementById(claveMensaje);
     passwordMessage.textContent = message;
     return message;
