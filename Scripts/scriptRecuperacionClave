@@ -1,0 +1,34 @@
+document.addEventListener('DOMContentLoaded', function() {
+    
+
+    function registerUser (event){
+        const emailForm = document.getElementById('email');
+        const codigoForm = document.getElementById('codigo');
+        
+        console.log(emailForm.value);
+        console.log(codigoForm.value);
+        event.preventDefault(); // Evitar el envío del formulario por defecto
+    }
+    
+    const codeLink = document.getElementById('codeLink');
+
+        codeLink.addEventListener('click', function(event) {
+        registerUser(event);
+    });
+
+// Obtener el input de correo electrónico
+    const emailInput = document.getElementById('email');
+    // Agregar un event listener para el evento blur (cuando el input pierde el foco)
+    emailInput.addEventListener('blur', function() {
+        // Verificar si el input tiene un valor
+        if (emailInput.value.trim() !== '') {
+            // Si tiene un valor, agregar la clase 'filled' al input
+            emailInput.classList.add('filled');
+        } else {
+            // Si está vacío, eliminar la clase 'filled' del input
+            emailInput.classList.remove('filled');
+        }
+    });
+
+
+});

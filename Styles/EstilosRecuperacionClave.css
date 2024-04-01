@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    font-family: sans-serif;
+    background: url(Fondo\ Registro-InicioSesion.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.recuperar-contrasena-box {
+    position: absolute;
+    margin-left: 65%;
+    margin-top: 4%;
+    max-width: 400px;
+    width: 90%;
+    padding: 40px;
+    background: rgb(242, 107, 118, 0.719);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgb(242, 107, 118, .4);
+    border-radius: 10px;
+}
+
+.recuperar-contrasena-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: rgb(242, 179, 61);
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    font-family: "kanit", sans-serif;
+}
+
+.recuperar-contrasena-box .user-box {
+    position: relative;
+}
+
+.recuperar-contrasena-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #F2B33D;
+    outline: none;
+    background: transparent;
+    font-family: "kanit", sans-serif;
+}
+
+.recuperar-contrasena-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #1D2F40;
+    pointer-events: none;
+    transition: .5s;
+}
+
+/* Eliminar botones para aumentar-disminuir numeros */
+.recuperar-contrasena-box .user-box input[type="number"]::-webkit-inner-spin-button,
+.recuperar-contrasena-box .user-box input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.recuperar-contrasena-box .user-box input:focus ~ label,
+.recuperar-contrasena-box .user-box input:valid ~ label,
+.recuperar-contrasena-box .user-box input.filled ~ label {
+    top: -20px;
+    left: 0;
+    color: #ff5866;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+.recuperar-contrasena-box .contenedorBotones {
+    display: flex;
+    justify-content: space-around;
+}
+
+.recuperar-contrasena-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #F2B33D;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 1px;
+}
+
+.contenedorBotones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.recuperar-contrasena-box a:hover {
+    background: rgb(242, 179, 61);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(242, 179, 61),
+                0 0 25px rgb(242, 179, 61),
+                0 0 50px rgb(242, 179, 61),
+                0 0 100px rgb(242, 179, 61);
+}

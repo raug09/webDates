@@ -12,7 +12,6 @@ body {
 /* Estilos para el formulario de registro */
 #registro-box {
     /* Estilos de contenedor principal */
-    position: relative;
     margin-left: 65%;
     margin-top: 4%;
     max-width: 400px;

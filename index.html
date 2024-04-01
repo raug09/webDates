@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Usuario</title>
+    <title>Inicio de sesion</title>
     <link rel="stylesheet" href="Styles/reset.css">
     <link rel="stylesheet" href="Styles/Estilos.css">
     <link rel="stylesheet" href="Styles/RegistroEstilos.css">
@@ -26,28 +26,29 @@
             <input id= "password" type="password" name="" oninput="validarClave('claveMensaje2')" autocomplete="current-password" required="">
             <label>Contraseña</label>
           </div>
+<!-- Contenedor validacion de clave -->
           <div id="claveMensaje2"></div>
+
           <div class="recordarme">
             <label class="checkbox">
-              <input  type="checkbox" name="Recuerdame" value="1">
+              <input id="check" type="checkbox" name="Recuerdame" value="1">
               Recuerdame
             </label>
-            <p class="button" href="#"> <span class="enlaceFalso">olvidaste tu contraseña?</span></p>
+            <p class="button" href="#"> <span id="enlaceFalso" class="enlaceFalso">olvidaste tu contraseña?</span></p>
           </div>
 
           <div class="contenedorBotones">
             <a href="#" id="loginLink">
             
               Entrar
-          </a>
+            </a>
             </div>
-               <div id="singUpText" class="singUpDiv">
-               <p>No estas registrado? 
-               <span id="volverLinkLogin" class="enlaceFalso">Registrate</span>
-               </p>
+              <div id="singUpText" class="singUpDiv">
+                <p>No estas registrado? 
+              <span id="volverLinkLogin" class="enlaceFalso">Registrate</span>
+              </p>
             </div>
-           
-          </a>
+        
         </form>
       </div>
 
@@ -73,14 +74,10 @@
                 <label>Contraseña</label>
               </div>
               <div id="claveMensaje"></div>
-         
-
           <div class="contenedorBotones">
             <a href="#" id="registroLink">
-          
               Registrarse
             </a>
-            
           </div>
           <div class="singUpDiv">
             <p> <span id="volverLinkRegister" class="enlaceFalso">¿Ya tengo cuenta?</span></p>
